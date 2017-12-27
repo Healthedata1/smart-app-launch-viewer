@@ -162,7 +162,7 @@ data:</p>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">offline_access</code></td>
-      <td>Request a <code class="highlighter-rouge">refresh_token</code> that can be used to obtain a new access token to replace an expired one, even after the end-user no long is online after the access token rexpires</td>
+      <td>Request a <code class="highlighter-rouge">refresh_token</code> that can be used to obtain a new access token to replace an expired one, even after the end-user no longer is online after the access token rexpires</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">online_access</code></td>
@@ -190,8 +190,8 @@ patient-specific and user-level access.</p>
 <h3 id="patient-specific-scopes">Patient-specific scopes</h3>
 
 <p>Patient-specific scopes allow access to specific data about a single patient.
-(You’ll notice that we don’t need to say <em>which</em> patient here: clinical data
-scopes are all about “what” and not “who.” We’ll deal with “who” below!)
+(Notice that <em>which</em> patient is not specified here: clinical data
+scopes are all about “what” and not “who.” “Who” is handled below!)
 Patient-specific scopes take the form: <code class="highlighter-rouge">patient/:resourceType.(read|write|*)</code>.</p>
 
 <p>Let’s look at a few examples:</p>
@@ -320,7 +320,7 @@ User-level scopes take the form: <code class="highlighter-rouge">user/:resourceT
     </tr>
     <tr>
       <td><em>none</em></td>
-      <td>The authoriztion server chose to not grant any of the requested scopes.</td>
+      <td>The authorization server chose to not grant any of the requested scopes.</td>
     </tr>
   </tbody>
 </table>
@@ -649,7 +649,7 @@ after the current access token expires, add one of the following scopes:</p>
 		<div class="container">  <!-- container -->
 			<div class="inner-wrapper">
 				<p>
-        &copy; HL7.org 2014+. FHIRPath STU1 Release (1.0.0) generated on 2017-12-27 12:12:45 -0800
+        &copy; HL7.org 2014+. FHIRPath STU1 Release (1.0.0) generated on 2017-12-27 14:13:38 -0800
         <span style="color: #FFFF77">|
                <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/2016May/license.html"><img style="border-style: none;" alt="CC0" src="../dist/cc0.png"/></a> |
                <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
