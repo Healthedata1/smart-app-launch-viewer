@@ -119,9 +119,7 @@
 <h1>SMART App Launch Framework</h1>
 
 
-<p id="publish-box">
-This is the Continuous Integration Build of the SMART Application Launch Framework Implementation Guide, based on <a href="http://hl7.org/fhir/STU3/">FHIR Version 3.0.1</a>. See the <a href="history/index.html">Directory of published versions <img src="external.png" /></a>
-</p>
+<p id="publish-box">This is the Continuous Integration Build of the SMART Application Launch Framework Implementation Guide and applies to versions <a href="http://hl7.org/fhir/DSTU2/">DSTU2</a>, and <a href="http://hl7.org/fhir/STU3/">STU3</a> of the FHIR specification. See the <a href="history/index.html">Directory of published versions <img src="external.png" alt="" /></a>.</p>
 
 <!--
 
@@ -146,7 +144,7 @@ Project</a>.</p>
 <h2 id="profile-audience-and-scope">Profile audience and scope</h2>
 <p>This profile is intended to be used by developers of apps that need to
 access FHIR resources by requesting access tokens from OAuth 2.0 compliant
-authorization servers.</p>
+authorization servers. Note that this Implementation Guide applies to both DSTU2 and STU3 versions of FHIR.</p>
 
 <p>OAuth 2.0 authorization servers are configured to mediate access based on
 a set of rules configured to enforce institutional policy, which may
@@ -156,9 +154,8 @@ authorization server.</p>
 
 <p>The profile defines a method through which an app requests
 authorization to access a FHIR resource, and then uses that authorization
-to retrieve the resource.  Other HIPAA-mandated security mechanisms,
-such as end-user authentication, session time-out, security auditing,
-and accounting of disclosures, are outside the scope of this profile.</p>
+to retrieve the resource.  Other security mechanisms, such as those mandated by HIPAA in the US (end-user authentication, session time-out, security auditing,
+and accounting of disclosures) are outside the scope of this profile.</p>
 
 <h2 id="support-for-public-and-confidential-apps">Support for “public” and “confidential” apps</h2>
 
@@ -370,7 +367,7 @@ redirect URL; include <code class="highlighter-rouge">state</code> with all auth
 the <code class="highlighter-rouge">state</code> value included in access tokens it receives.</p>
   </li>
   <li>
-    <p>An app should NEVER treat any inputs it receives as executable code.</p>
+    <p>An app should NEVER excecute any inputs it receives as code.</p>
   </li>
   <li>
     <p>An app MUST NOT forward values passed back to its redirect URL to any
@@ -473,7 +470,7 @@ flow, this <code>aud</code> value is the same as the launch's <code>iss</code> v
 </table>
 
 <p>The app MUST use an unpredictable value for the state parameter
-with at least 128 bits of entropy. The app MUST validate the value
+with at least 122 bits of entropy (sufficient for a random UUID). The app MUST validate the value
 of the state parameter upon return to the redirect URL and MUST ensure
 that the state value is securely tied to the user’s current session
 (e.g., by relating the state value to a session identifier issued
@@ -941,7 +938,7 @@ refresh_token=a47txjiipgxkvohibvsm
 		<div class="container">  <!-- container -->
 			<div class="inner-wrapper">
 				<p>
-        &copy; HL7.org 2014+. FHIRPath STU1 Release (1.0.0) generated on 2017-12-27 14:13:38 -0800
+        &copy; HL7.org 2014+. FHIRPath STU1 Release (1.0.0) generated on 2017-12-27 16:20:29 -0800
         <span style="color: #FFFF77">|
                <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/2016May/license.html"><img style="border-style: none;" alt="CC0" src="dist/cc0.png"/></a> |
                <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>

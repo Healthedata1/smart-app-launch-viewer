@@ -121,7 +121,8 @@
 <p>If a server requires SMART on FHIR authorization for access, its metadata must
 support automated dicovery of OAuth2 endpoints by including a “complex”
 extension (that is, an extension with multiple components inside) on the
-<code class="highlighter-rouge">CapabilityStatement.rest.security</code> element. Any time a client sees this extension, it
+<code class="highlighter-rouge">CapabilityStatement.rest.security</code> element (or when using FHIR DSTU2, the
+<code class="highlighter-rouge">Conformance.rest.security</code> element). Any time a client sees this extension, it
 must be prepared to authorize using SMART’s OAuth2-based protocol.</p>
 
 <p>The top-level extension uses the URL
@@ -166,7 +167,7 @@ the following internal components:</p>
 supports by declaring a list of “capabilties”. Details are <a href="../conformance/index.html">provided
 here</a>.</p>
 
-<h3 id="example-capabilitystatement-as-json">Example CapabilityStatement (as JSON)</h3>
+<h3 id="example-version-stu3-capabilitystatement-as-json">Example Version STU3 CapabilityStatement (as JSON)</h3>
 
 <div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CapabilityStatement"</span><span class="p">,</span><span class="w">
@@ -261,7 +262,7 @@ here</a>.</p>
 		<div class="container">  <!-- container -->
 			<div class="inner-wrapper">
 				<p>
-        &copy; HL7.org 2014+. FHIRPath STU1 Release (1.0.0) generated on 2017-12-27 14:13:38 -0800
+        &copy; HL7.org 2014+. FHIRPath STU1 Release (1.0.0) generated on 2017-12-27 16:20:29 -0800
         <span style="color: #FFFF77">|
                <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/2016May/license.html"><img style="border-style: none;" alt="CC0" src="../dist/cc0.png"/></a> |
                <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
