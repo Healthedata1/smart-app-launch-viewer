@@ -8,9 +8,6 @@ http://build.fhir.org/ig/Healthedata1/smart-app-launch-viewer/
 ## Source:
 
 - [Ballotted (upstream) version](http://www.hl7.org/fhir/smart-app-launch/index.html)
-
 - [spreadsheet](https://docs.google.com/spreadsheets/d/1j-Dp6B3VetJ_dMseTl6F9qu4GIZr5b9HFRB4iURfSLw/edit#gid=569200369)
-- [themes](https://docs.google.com/spreadsheets/d/1LgfmqZLcEiprCDXrHCG9NyT4rG0wulN0gnwtd4wK1u8/edit#gid=0)
- local Fork and source for this output
-
-- [local CI Build](file:///Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/index.html)
+- [themes](https://docs.google.com/spreadsheets/d/1LgfmqZLcEiprCDXrHCG9NyT4rG0wulN0gnwtd4wK1u8/edit#gid=0) local Fork and source for this output
+- [Forked repo where applying changes](https://github.com/Healthedata1/smart-app-launch-brver)
