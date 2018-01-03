@@ -3,7 +3,7 @@ Output for local smart app launch ig to review after appying ballot recon items 
 
 ## Output can be viewed here:
 
-http://build.fhir.org/ig/healthedata1/smart-app-launch-viewer/
+http://build.fhir.org/ig/Healthedata1/smart-app-launch-viewer/
 
 ## Source:
 
