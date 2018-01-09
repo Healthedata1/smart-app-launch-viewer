@@ -16,9 +16,12 @@ known as the **Core SMART on FHIR Support** that includes support for
 
 ## Publishing a set of Capabilities
 
-A SMART on FHIR server can convey its capabilities to app developers by listing the capabilities it supports from the choices described below. These [Capability Sets](capability-sets/index.html) can then be determined from this list.
-
-These capabilities can be published out of band, or it can be conveyed as part of a server's FHIR `CapabilityStatement` using an extension on `CapabilityStatement.rest.security` (when using this specification with FHIR DSTU2, the `CapabilityStatement` is named `Conformance`). For example, a server can publish its support for Core SMART on FHIR Support by including: [Core Capabilities](core-set/index.html)
+A SMART on FHIR server can convey its capabilities to app developers by listing
+a set of the capabilities described below. This can be published out of band,
+or it can be conveyed as part of a server's FHIR `CapabilityStatement` using
+an extension on `CapabilityStatement.rest.security` (when using this specification
+with FHIR DSTU2, the `CapabilityStatement` is named `Conformance`). For example, a server
+can publish its support for Core SMART on FHIR Support by including: [Core Capabilities](core-set/index.html)
 
 ## Specific Capabilities (by category)
 
@@ -73,5 +76,3 @@ completing the launch.
 * `permission-offline`: support for refresh tokens (requested by `offline_access` scope)
 * `permission-patient`: support for patient-level scopes (e.g. `patient/Observation.read`)
 * `permission-user`: support for user-level scopes (e.g. `user/Appointment.read`)
-
-<br />
