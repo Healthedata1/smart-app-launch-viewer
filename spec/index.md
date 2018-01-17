@@ -5,16 +5,10 @@ layout: default
 {% include publish-box.md %}
 
 SMART on FHIR provides reliable, secure authorization for a variety of app
-architectures through the use of the OAuth 2.0 standard.  This specification is
-intended for interactive apps where there is a user in the loop at least for the
-authorization / launch process and supports the following
- [four functional use cases](http://argonautwiki.hl7.org/images/4/4c/Argonaut_UseCasesV1.pdf)
- as defined for Phase 1 of the [Argonaut Project](http://argonautwiki.hl7.org/index.php?title=Main_Page):
-
-1. Patient uses provider-approved web application to access health data
-1. Patient uses provider-approved mobile app to access health data
-1. Clinician uses provider-approved web application to access health data
-1. Clinician uses provider-approved mobile app to access health data
+architectures through the use of the OAuth 2.0 standard.  The Launch Framework
+supports the [four uses cases](http://argonautwiki.hl7.org/images/4/4c/Argonaut_UseCasesV1.pdf)
+defined for Phase 1 of the [Argonaut
+Project](http://argonautwiki.hl7.org/index.php?title=Main_Page).  
 
 ## Profile audience and scope
 This profile is intended to be used by developers of apps that need to
@@ -62,7 +56,11 @@ when all of the following apply:
 
 ## Registering a SMART App with an EHR
 
-Before a SMART app can run against an EHR, the app must be registered with that EHR’s authorization service. SMART does not specify a standards-based registration process, but we encourage EHR implementers to consider the OAuth 2.0 Dynamic Client Registration Protocol for an out-of-the-box solution. Similarly, we encourage EHR implementers to consider the [Oauth 2.0 Token Introspection Protocol](https://tools.ietf.org/html/rfc7662) for a solution to examining the validity and meaning of tokens.
+Before a SMART app can run against an EHR, the app must be registered with that
+EHR's authorization service.  SMART does not specify a standards-based registration process, but we
+encourage EHR implementers to consider the [OAuth 2.0 Dynamic Client
+Registration Protocol](https://tools.ietf.org/html/draft-ietf-oauth-dyn-reg)
+for an out-of-the-box solution.
 
 No matter how an app registers with an EHR's authorization service, at registration time **every SMART app must**:
 
@@ -235,8 +233,7 @@ redirector”).
 * An app should NEVER store bearer tokens in cookies that are transmitted
 in the clear.
 
-* Apps should persist tokens and other sensitive data in app-specific
-storage locations only, not in system-wide-discoverable locations.
+* Apps should not persist tokens and other sensitive data in a way that allows unauthorized access.
 
 #### *SMART authorization sequence*
 
@@ -555,8 +552,7 @@ current access token expires (see step 5 below).  A refresh token MUST
 BE bound to the same `client_id` and MUST contain the same, or a subset of,
 the set of claims authorized for the access token with which it is associated.  
 
-Apps SHOULD store tokens in app-specific storage locations only, not in
-system-wide-discoverable locations.  Access tokens SHOULD have a valid
+Apps should not persist tokens and other sensitive data in a way that allows unauthorized access.  Access tokens SHOULD have a valid
 lifetime no greater than one hour, and refresh tokens (if issued) SHOULD
 have a valid lifetime no greater than twenty-four hours.  Confidential
 clients may be issued longer-lived tokens than public clients.
