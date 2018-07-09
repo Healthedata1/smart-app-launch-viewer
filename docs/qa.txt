@@ -1,0 +1,49 @@
+﻿SMART Application Launch Framework : Validation Results
+=========================================
+
+err = 6, warn = 0, info = 2
+Generated Mon Jul 09 15:28:07 PDT 2018. FHIR version 3.4.0 for 3.0.1
+
+ Build Errors : 32 / 0
+ /Users/ehaas/Documents/FHIR/smart-app-launch-brver/resources/ig : 0 / 0
+ /Users/ehaas/Documents/FHIR/smart-app-launch-brver/resources/smartlaunch-profile-spreadsheet : 3 / 1
+</table>
+== n/a ==
+ERROR: CapabilityStatement.format: The reference http://hl7.org/fhir/ValueSet/mimetypes could not be resolved
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/basic-auth-example/index.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/CodeSystem-cap-codes.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/CodeSystem-cap-codes.json.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/CodeSystem-cap-codes.ttl.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/CodeSystem-cap-codes.xml.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/conformance/fhir-conformance-artifacts/index.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/conformance/index.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/downloads/index.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/history/index.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/ImplementationGuide-ig.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/ImplementationGuide-ig.json.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/ImplementationGuide-ig.ttl.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/ImplementationGuide-ig.xml.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/index.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/scopes-and-launch-context/index.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/StructureDefinition-capabilitystatement-smartlaunch.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/StructureDefinition-capabilitystatement-smartlaunch.json.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/StructureDefinition-capabilitystatement-smartlaunch.ttl.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/StructureDefinition-capabilitystatement-smartlaunch.xml.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/StructureDefinition-extension-oauth-uris.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/StructureDefinition-extension-oauth-uris.json.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/StructureDefinition-extension-oauth-uris.ttl.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/StructureDefinition-extension-oauth-uris.xml.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/StructureDefinition-extension-smart-capabilities.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/StructureDefinition-extension-smart-capabilities.json.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/StructureDefinition-extension-smart-capabilities.ttl.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/StructureDefinition-extension-smart-capabilities.xml.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/ValueSet-cap-codes.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/ValueSet-cap-codes.json.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/ValueSet-cap-codes.ttl.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+ERROR: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output/ValueSet-cap-codes.xml.html: Unable to Parse HTML - does not start with tag. Found p at line 7 column 1
+== /Users/ehaas/Documents/FHIR/smart-app-launch-brver/resources/ig.xml ==
+== /Users/ehaas/Documents/FHIR/smart-app-launch-brver/resources/smartlaunch-profile-spreadsheet.xml ==
+INFORMATION: /Users/ehaas/Documents/FHIR/smart-app-launch-brver/resources/smartlaunch-profile-spreadsheet: Resources generated by processing smartlaunch-profile-spreadsheet:  http://hl7.org/fhir/smart-app-launch/ValueSet/cap-codes ("CapabilityCodes")  http://hl7.org/fhir/smart-app-launch/CodeSystem/cap-codes ("CapabilityCodes")  http://hl7.org/fhir/smart-app-launch/StructureDefinition/extension-oauth-uris ("Support for dicovery of OAuth2 endpoints")  http://hl7.org/fhir/smart-app-launch/StructureDefinition/extension-smart-capabilities ("Support for optional SMART launch features")  http://hl7.org/fhir/smart-app-launch/StructureDefinition/capabilitystatement-smartlaunch ("SMART on FHIR CapabilityStatement")
+ERROR: ValueSet/cap-codes: ValueSet: Profile http://hl7.org/fhir/StructureDefinition/shareablevalueset, Element 'ValueSet.version': minimum required = 1, but only found 0
+ERROR: ValueSet/cap-codes: ValueSet: Profile http://hl7.org/fhir/StructureDefinition/shareablevalueset, Element 'ValueSet.experimental': minimum required = 1, but only found 0
+ERROR: ValueSet/cap-codes: ValueSet: Profile http://hl7.org/fhir/StructureDefinition/shareablevalueset, Element 'ValueSet.publisher': minimum required = 1, but only found 0
