@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "6337a67c-47d8-46c9-a560-3eceea936c76",
+  "id" : "1c039a85-953e-4c3c-a4fc-08e53478f271",
   "meta" : {
-    "lastUpdated" : "2018-07-09T15:27:41.416-07:00"
+    "lastUpdated" : "2018-07-09T16:57:28.202-07:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -21,7 +21,7 @@
       "version" : "1.0.0",
       "name" : "CapabilityCodes",
       "status" : "draft",
-      "date" : "2018-07-09T15:27:41-07:00",
+      "date" : "2018-07-09T16:57:28-07:00",
       "contact" : [{
         "telecom" : [{
           "system" : "url"
