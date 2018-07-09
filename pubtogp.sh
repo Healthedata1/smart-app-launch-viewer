@@ -10,6 +10,7 @@ echo "================================================================="
 
 cp -r /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output docs
 
+git status
 
 echo "================================================================="
 echo === git add ,l ===
@@ -30,3 +31,5 @@ echo === git push origin master ===
 echo "================================================================="
 
 git push origin master
+
+git status

@@ -22,7 +22,7 @@
   fhir:ValueSet.version [ fhir:value "1.0.0"];
   fhir:ValueSet.name [ fhir:value "CapabilityCodes"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2018-07-09T16:23:02-07:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2018-07-09T16:41:59-07:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [

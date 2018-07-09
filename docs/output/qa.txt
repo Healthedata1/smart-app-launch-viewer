@@ -2,7 +2,7 @@
 =========================================
 
 err = 6, warn = 0, info = 2
-Generated Mon Jul 09 16:25:27 PDT 2018. FHIR version 3.4.0 for 3.0.1
+Generated Mon Jul 09 16:42:34 PDT 2018. FHIR version 3.4.0 for 3.0.1
 
  Build Errors : 32 / 0
  /Users/ehaas/Documents/FHIR/smart-app-launch-brver/resources/ig : 0 / 0
