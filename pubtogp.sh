@@ -8,7 +8,7 @@ echo "================================================================="
 echo === copy output to docs===
 echo "================================================================="
 
-cp /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output docs
+cp -r /Users/ehaas/Documents/FHIR/smart-app-launch-brver/output docs
 
 
 echo "================================================================="

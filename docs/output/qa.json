@@ -1,0 +1,12 @@
+﻿{
+  "url": "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/ig",
+  "name": "SMART Application Launch Framework",
+  "package-id": "smart.launch",
+  "ig-ver": "1.0.0",
+  "date": "Mon, 09 Jul, 2018 16:25:20 -0700",
+  "errs": 6,
+  "warnings": 0,
+  "hints": 2,
+  "version": "3.0.1",
+  "tool": "3.4.0-13883"
+}

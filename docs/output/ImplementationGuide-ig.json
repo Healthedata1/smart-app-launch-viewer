@@ -1,0 +1,130 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ig",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SMART Application Launch Framework</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/smart-app-launch/ImplementationGuide/ig</pre></div>"
+  },
+  "url": "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/ig",
+  "version": "1.0.0",
+  "name": "SMART Application Launch Framework",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "FHIR Project",
+  "fhirVersion": "3.0.1",
+  "package": [
+    {
+      "id": "p1",
+      "name": "base",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-oauth-uris.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-oauth-uris"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-smart-capabilities.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-smart-capabilities"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-capabilitystatement-smartlaunch.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/capabilitystatement-smartlaunch"
+          }
+        }
+      ]
+    },
+    {
+      "id": "smartlaunch-profile-spreadsheet.xml",
+      "name": "SMART on FHIR CapabilityStatement",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-cap-codes.html"
+            }
+          ],
+          "name": "CapabilityCodes",
+          "sourceReference": {
+            "reference": "ValueSet/cap-codes"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-cap-codes.html"
+            }
+          ],
+          "name": "CapabilityCodes",
+          "sourceReference": {
+            "reference": "CodeSystem/cap-codes"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-oauth-uris.html"
+            }
+          ],
+          "name": "Support for dicovery of OAuth2 endpoints",
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-oauth-uris"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-smart-capabilities.html"
+            }
+          ],
+          "name": "Support for optional SMART launch features",
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-smart-capabilities"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-capabilitystatement-smartlaunch.html"
+            }
+          ],
+          "name": "SMART on FHIR CapabilityStatement",
+          "sourceReference": {
+            "reference": "StructureDefinition/capabilitystatement-smartlaunch"
+          }
+        }
+      ]
+    }
+  ],
+  "page": {
+    "source": "index.html",
+    "title": "SMART App Launch",
+    "kind": "page"
+  }
+}
