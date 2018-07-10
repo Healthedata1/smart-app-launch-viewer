@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cap-codes"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CapabilityCodes</h2><div><p>Codes describing <em>optional</em> SMART features</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href="CodeSystem-cap-codes.html"><code>http://hl7.org/fhir/smart-app-launch/CodeSystem/cap-codes</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/smart-app-launch/ValueSet/cap-codes"/>
+  <version value="1.0.0"/>
+  <name value="CapabilityCodes"/>
+  <status value="draft"/>
+  <date value="2018-07-09T16:57:28-07:00"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+    </telecom>
+  </contact>
+  <description value="Codes describing *optional* SMART features"/>
+  <immutable value="true"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/smart-app-launch/CodeSystem/cap-codes"/>
+    </include>
+  </compose>
+</ValueSet>

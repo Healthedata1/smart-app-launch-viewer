@@ -1,0 +1,124 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# - resource -------------------------------------------------------------------
+
+[] a fhir:ImplementationGuide;
+  fhir:Resource.id [ fhir:value "ig"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/ig"];
+  fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
+  fhir:ImplementationGuide.name [ fhir:value "SMART Application Launch Framework"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.experimental [ fhir:value "false"];
+  fhir:ImplementationGuide.publisher [ fhir:value "FHIR Project"];
+  fhir:ImplementationGuide.fhirVersion [ fhir:value "3.0.1"];
+  fhir:ImplementationGuide.package [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "p1" ];
+     fhir:ImplementationGuide.name [ fhir:value "base" ];
+     fhir:ImplementationGuide.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.value [ fhir:value "StructureDefinition-extension-oauth-uris.html" ]
+       ];
+       fhir:ImplementationGuide.example [ fhir:value "false" ];
+       fhir:ImplementationGuide.source [
+         fhir:Reference.reference [ fhir:value "StructureDefinition/extension-oauth-uris" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.value [ fhir:value "StructureDefinition-extension-smart-capabilities.html" ]
+       ];
+       fhir:ImplementationGuide.example [ fhir:value "false" ];
+       fhir:ImplementationGuide.source [
+         fhir:Reference.reference [ fhir:value "StructureDefinition/extension-smart-capabilities" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.value [ fhir:value "StructureDefinition-capabilitystatement-smartlaunch.html" ]
+       ];
+       fhir:ImplementationGuide.example [ fhir:value "false" ];
+       fhir:ImplementationGuide.source [
+         fhir:Reference.reference [ fhir:value "StructureDefinition/capabilitystatement-smartlaunch" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "smartlaunch-profile-spreadsheet.xml" ];
+     fhir:ImplementationGuide.name [ fhir:value "SMART on FHIR CapabilityStatement" ];
+     fhir:ImplementationGuide.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.value [ fhir:value "ValueSet-cap-codes.html" ]
+       ];
+       fhir:ImplementationGuide.name [ fhir:value "CapabilityCodes" ];
+       fhir:ImplementationGuide.source [
+         fhir:Reference.reference [ fhir:value "ValueSet/cap-codes" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.value [ fhir:value "CodeSystem-cap-codes.html" ]
+       ];
+       fhir:ImplementationGuide.name [ fhir:value "CapabilityCodes" ];
+       fhir:ImplementationGuide.source [
+         fhir:Reference.reference [ fhir:value "CodeSystem/cap-codes" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.value [ fhir:value "StructureDefinition-extension-oauth-uris.html" ]
+       ];
+       fhir:ImplementationGuide.name [ fhir:value "Support for dicovery of OAuth2 endpoints" ];
+       fhir:ImplementationGuide.source [
+         fhir:Reference.reference [ fhir:value "StructureDefinition/extension-oauth-uris" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.value [ fhir:value "StructureDefinition-extension-smart-capabilities.html" ]
+       ];
+       fhir:ImplementationGuide.name [ fhir:value "Support for optional SMART launch features" ];
+       fhir:ImplementationGuide.source [
+         fhir:Reference.reference [ fhir:value "StructureDefinition/extension-smart-capabilities" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.value [ fhir:value "StructureDefinition-capabilitystatement-smartlaunch.html" ]
+       ];
+       fhir:ImplementationGuide.name [ fhir:value "SMART on FHIR CapabilityStatement" ];
+       fhir:ImplementationGuide.source [
+         fhir:Reference.reference [ fhir:value "StructureDefinition/capabilitystatement-smartlaunch" ]
+       ]
+     ]
+  ];
+  fhir:ImplementationGuide.page [
+     fhir:ImplementationGuide.source [ fhir:value "index.html" ];
+     fhir:ImplementationGuide.title [ fhir:value "SMART App Launch" ];
+     fhir:ImplementationGuide.kind [ fhir:value "page" ]
+  ] .
+
+# -------------------------------------------------------------------------------------
+

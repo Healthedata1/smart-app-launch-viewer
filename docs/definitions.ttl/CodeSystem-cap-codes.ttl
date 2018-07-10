@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# - resource -------------------------------------------------------------------
+
+[] a fhir:CodeSystem;
+  fhir:Resource.id [ fhir:value "cap-codes"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/smart-app-launch/CodeSystem/cap-codes"];
+  fhir:CodeSystem.version [ fhir:value "1.0.0"];
+  fhir:CodeSystem.name [ fhir:value "CapabilityCodes"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.experimental [ fhir:value "false"];
+  fhir:CodeSystem.date [ fhir:value "2018-07-09T16:57:28-07:00"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Codes describing *optional* SMART features"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"];
+  fhir:CodeSystem.valueSet [ fhir:value "http://hl7.org/fhir/smart-app-launch/ValueSet/cap-codes"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.code [ fhir:value "launch-ehr" ];
+     fhir:CodeSystem.display [ fhir:value "Launch Ehr" ];
+     fhir:CodeSystem.definition [ fhir:value "support for SMART's EHR Launch mode" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.code [ fhir:value "launch-standalone" ];
+     fhir:CodeSystem.display [ fhir:value "Launch Standalone" ];
+     fhir:CodeSystem.definition [ fhir:value "support for SMART's Standalone Launch mode" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.code [ fhir:value "client-public" ];
+     fhir:CodeSystem.display [ fhir:value "Client Public" ];
+     fhir:CodeSystem.definition [ fhir:value "support for SMART's public client profile (no client authentication)" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.code [ fhir:value "client-confidential-symmetric" ];
+     fhir:CodeSystem.display [ fhir:value "Client Confidential Symmetric" ];
+     fhir:CodeSystem.definition [ fhir:value "support for SMART's confidential client profile (symmetric client secret authentication)" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.code [ fhir:value "sso-openid-connect" ];
+     fhir:CodeSystem.display [ fhir:value "Sso Openid Connect" ];
+     fhir:CodeSystem.definition [ fhir:value "support for SMART's OpenID Connect profile" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.code [ fhir:value "context-banner" ];
+     fhir:CodeSystem.display [ fhir:value "Context Banner" ];
+     fhir:CodeSystem.definition [ fhir:value "support for \"need patient banner\" launch context (conveyed via `need_patient_banner` token paramete" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.code [ fhir:value "context-style" ];
+     fhir:CodeSystem.display [ fhir:value "Context Style" ];
+     fhir:CodeSystem.definition [ fhir:value "support for \"SMART style URL\" launch context (conveyed via `smart_style_url` token parameter)" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.code [ fhir:value "context-ehr-patient" ];
+     fhir:CodeSystem.display [ fhir:value "Context Ehr Patient" ];
+     fhir:CodeSystem.definition [ fhir:value "support for patient-level launch context (requested by `launch/patient` scope, conveyed via `patient` token parameter)" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.code [ fhir:value "context-ehr-encounter" ];
+     fhir:CodeSystem.display [ fhir:value "Context Ehr Encounter" ];
+     fhir:CodeSystem.definition [ fhir:value "support for encounter-level launch context (requested by `launch/encounter` scope, conveyed via `encounter` token parameter)" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.code [ fhir:value "context-standalone-patient" ];
+     fhir:CodeSystem.display [ fhir:value "Context Standalone Patient" ];
+     fhir:CodeSystem.definition [ fhir:value "support for patient-level launch context (requested by `launch/patient` scope, conveyed via `patient` token parameter)" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.code [ fhir:value "context-standalone-encounter" ];
+     fhir:CodeSystem.display [ fhir:value "Context Standalone Encounter" ];
+     fhir:CodeSystem.definition [ fhir:value "support for encounter-level launch context (requested by `launch/encounter` scope, conveyed via `encounter` token parameter)" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.code [ fhir:value "permission-offline" ];
+     fhir:CodeSystem.display [ fhir:value "Permission Offline" ];
+     fhir:CodeSystem.definition [ fhir:value "support for refresh tokens (requested by `offline_access` scope)" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.code [ fhir:value "permission-patient" ];
+     fhir:CodeSystem.display [ fhir:value "Permission Patient" ];
+     fhir:CodeSystem.definition [ fhir:value "support for patient-level scopes (e.g. `patient/Observation.read`)" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.code [ fhir:value "permission-user" ];
+     fhir:CodeSystem.display [ fhir:value "Permission User" ];
+     fhir:CodeSystem.definition [ fhir:value "support for user-level scopes (e.g. `user/Appointment.read`)" ]
+  ] .
+
+# -------------------------------------------------------------------------------------
+
