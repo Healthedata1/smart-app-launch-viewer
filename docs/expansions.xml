@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1c039a85-953e-4c3c-a4fc-08e53478f271"/>
+  <id value="54bfb0d1-12ab-4639-93f3-b846bc419a8b"/>
   <meta>
-    <lastUpdated value="2018-07-09T16:57:28.202-07:00"/>
+    <lastUpdated value="2018-07-09T18:30:14.526-07:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -155,7 +155,7 @@
         <version value="1.0.0"/>
         <name value="CapabilityCodes"/>
         <status value="draft"/>
-        <date value="2018-07-09T16:57:28-07:00"/>
+        <date value="2018-07-09T18:28:04-07:00"/>
         <contact>
           <telecom>
             <system value="url"/>
