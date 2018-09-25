@@ -1,3 +1,9 @@
+ 
+
+
+
+
+
 
 
 
@@ -96,23 +102,35 @@
 						<span class="icon-bar"> </span>
 					</button>
 					<a class="navbar-brand hidden" href="#">Navbar</a>
-					<div class="nav-collapse collapse navbar-inverse-collapse">
-						<ul class="nav navbar-nav">
-              <li><a class="nav-link" href="../index.html">Home</a></li>
-                <li class="dropdown">
-                  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Conformance<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="../conformance/index.html">Declaring Conformance</a></li>
-                    <li><a class="nav-link" href="../conformance/capability-sets/index.html">Conformance: Capability Sets</a></li>
-                    <li><a class="nav-link" href="../conformance/core-set/index.html">Conformance: Core Set</a></li>
-                    <li><a class="nav-link" href="../well-known/index.html">Conformance:FHIR Authorization Endpoint and Capabilities Discovery</a></li>
-                  </ul>
-                </li>
-              <li><a class="nav-link" href="../scopes-and-launch-context/index.html">Scopes and Launch Context</a><!--current--></li>
-
-						</ul>
-					</div>  <!-- /.nav-collapse -->
-
+						<div class="nav-collapse collapse navbar-inverse-collapse">
+							<ul class="nav navbar-nav">
+								<li>
+									<a class="nav-link" href="../index.html">Home</a>
+								</li>
+								<li class="dropdown">
+									<a href="#" data-toggle="dropdown" class="dropdown-toggle">Conformance<b class="caret">
+										</b>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="nav-link" href="../conformance/index.html">Declaring Conformance</a>
+										</li>
+										<li>
+											<a class="nav-link" href="../conformance/fhir-conformance-artifacts/index.html">Conformance: FHIR Conformance Artifacts</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a class="nav-link" href="../scopes-and-launch-context/index.html">Scopes and Launch Context</a>
+									<!--current-->
+								</li>
+								<li>
+									<a class="nav-link" href="../downloads/index.html">Downloads</a>
+									<!--current-->
+								</li>
+							</ul>
+						</div>
+						<!-- /.nav-collapse -->
           </div>  <!-- /.container -->
 			</nav>  <!-- /.navbar -->
 
@@ -202,7 +220,7 @@
   		<div class="container">  <!-- container -->
   			<div class="inner-wrapper">
   				<p>Smart App Launch Framework Version: 1.0.0
-          &copy; Boston Children's Hospital and Health Level Sevel International. This content is licensed under <a href="https://creativecommons.org/licenses/by/4.0/"><!-- <img height=auto  alt="CC BY 4.0" src="../dist/CC-BY_icon.svg"/> -->CC BY 4.0</a>.  Generated on 2018-09-04 12:56:20 -0700 by the FHIR IG-publisher v3.0.1-11917.
+          &copy; Boston Children's Hospital and Health Level Sevel International. This content is licensed under <a href="https://creativecommons.org/licenses/by/4.0/"><!-- <img height=auto  alt="CC BY 4.0" src="../dist/CC-BY_icon.svg"/> -->CC BY 4.0</a>.  Generated on 2018-09-20 19:42:33 -0700 by the FHIR IG-publisher v3.0.1-11917.
           <span style="color: #FFFF77">
             | <a style="color: #81BEF7" target="_blank" href="https://github.com/HL7/smart-app-launch/issues">Propose a change</a>
           </span>
@@ -228,10 +246,17 @@
 <script src="../dist/fhir.js"> </script>
 <script src="../dist/topofpage.js"> </script>
 
+
+<!--   end added for profile tabs -->
+
+
   <!-- Analytics Below
 ================================================== -->
-<!-- add anchors before the closing body tag. -->
-<script> anchors.add()</script>
+<!-- add anchors before the closing body tag. no sure why the hover is not working?-->
+<script> anchors.options = {
+  visible: 'always'
+}; anchors.add('h2, h3, h4, h5, h6,.anchored')
+</script>
 
 </body>
 </html>
