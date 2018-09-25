@@ -138,11 +138,15 @@
 
 <div class="col-12">
 
+  <!-- status-bar -->
+<p id="publish-box">
+
+This is the   Version 1.0.0 Release  of the SMART Application Launch Framework Implementation Guide,  based on <a href="http://hl7.org/fhir/STU3/index.html">FHIR Version 3.0.1</a>.  See the <a href="http://www.fhir.org/guides//history.html">Directory of published versions</a>
+
+</p>
 
 
 <h1>SMART App Launch: Scopes and Launch Context</h1>
-
-  <!-- status-bar -->
 
 <p>SMART on FHIR’s authorization scheme uses OAuth scopes to communicate (and
 negotiate) access requirements. Providing apps with access to broad data sets is consistent with current common practices (e.g. interface engines also provide access to broad data sets); access is also limited based on the privileges of the user in context.  In general, we use scopes for three kinds of data:</p>
@@ -615,7 +619,7 @@ with the SMART’s <code class="highlighter-rouge">sso-openid-connect</code> cap
 
 <ul>
   <li>
-    <p><a name="bcb7953f-5188-4da0-a663-a3395800288d">​</a>Response types: The EHR MUST support the Authorization Code Flow, with the request parameters <a href="../">as defined in SMART’s authorization guide</a>. Support is not required for parameters that OIDC lists as optional (e.g. <code class="highlighter-rouge">id_token_hint</code>, <code class="highlighter-rouge">acr_value</code>), but EHRs are encouraged to review these optional parameters.</p>
+    <p><a name="1cbdee84-ecb8-4511-9230-7a3dbb11576b">​</a>Response types: The EHR MUST support the Authorization Code Flow, with the request parameters <a href="../">as defined in SMART’s authorization guide</a>. Support is not required for parameters that OIDC lists as optional (e.g. <code class="highlighter-rouge">id_token_hint</code>, <code class="highlighter-rouge">acr_value</code>), but EHRs are encouraged to review these optional parameters.</p>
   </li>
   <li>
     <p>Public Keys Published as Bare Keys: The EHR MUST publish public keys as base JWK keys (which MAY also be accompanied by X.509 representations of those keys).</p>
@@ -687,7 +691,7 @@ after the current access token expires, add one of the following scopes:</p>
 <h2 id="worked-examples">Worked examples</h2>
 
 <ul>
-  <li><a name="19e31384-ef65-4180-92f3-ce1e3493b552">​</a>Worked Python example: <a href="../worked_example1/index.html">rendered</a> (<a href="../smart-on-fhir-jwt-examples.ipynb">ipython notebook source</a>).</li>
+  <li>Worked Python example: <a href="../worked_example1/index.html">rendered</a> (<a href="../dist/smart-on-fhir-jwt-examples.ipynb">ipython notebook source</a>).</li>
 </ul>
 
 <h2 id="appendix-uri-representation-of-scopes">Appendix: URI representation of scopes</h2>
@@ -731,8 +735,9 @@ after the current access token expires, add one of the following scopes:</p>
   		<div class="container">    <!-- container -->
   			<div class="inner-wrapper">
   				<p>Smart App Launch Framework Version: 1.0.0
-          &copy; Boston Children's Hospital and Health Level Sevel International. This content is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">  <!-- <img height=auto  alt="CC BY 4.0" src="../dist/CC-BY_icon.svg"/> -->CC BY 4.0</a>.  Generated on 2018-09-20 19:42:33 -0700 by the FHIR IG-publisher v3.0.1-11917.
-          <span style="color: #FFFF77">
+          &copy; Boston Children's Hospital and Health Level Sevel International. This content is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">  <!-- <img height=auto  alt="CC BY 4.0" src="../dist/CC-BY_icon.svg"/> -->CC BY 4.0</a>.  Generated on 2018-09-24 19:36:58 -0700 by the FHIR IG-publisher v3.0.1-11917.
+          <span style="color: #FFFF77"><a name="08613a18-83bc-4582-b079-0fd84b863887">​</a> |
+            <a style="color: #81BEF7" href="history/index.html" target="_blank">History</a>
             | <a style="color: #81BEF7" href="https://github.com/HL7/smart-app-launch/issues" target="_blank">Propose a change</a>
           </span>
           </p>

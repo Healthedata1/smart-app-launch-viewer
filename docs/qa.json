@@ -3,7 +3,7 @@
   "name": "SMART Application Launch Framework",
   "package-id": "hl7.fhir.smart",
   "ig-ver": "1.0.0",
-  "date": "Thu, 20 Sep, 2018 19:42:30 -0700",
+  "date": "Mon, 24 Sep, 2018 19:36:57 -0700",
   "errs": 0,
   "warnings": 4,
   "hints": 0,
